@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ian Morrison</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link href='https://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+    <style>
+      html, body {
+        position: relative;
+        width: 100%;
+        padding 0;
+        margin: 0;
+        font-family:'Lato', sans-serif;;
+      }
+      .image-container {
+        background: #131313 50% 100% no-repeat;
+        background-size: cover;
+        height: 90vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        opacity: 0;
+        -webkit-animation-name: overlay;
+        animation-name: overlay;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+      }
+      @-webkit-keyframes overlay {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes overlay {
+        0% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
+      header {
+        max-width: 600px;
+        min-width: 50%;
+        margin: 0 auto;
+        padding: 2em 1em;
+        text-align: right;
+      }
+      .top {
+        display: block;
+        margin: 0;
+        font-size: 1em;
+        padding: 0.5em 0;
+        color: #fff;
+        letter-spacing: 2px;
+        border-bottom: 2.5px solid #fff;
+      }
+      h1 {
+        color: #fff;
+        font-size: 3em;
+        margin: 0.2em 0;
+      }
+      footer {
+        display: flex;
+        justify-content: space-around;
+        max-width: 600px;
+        padding: 1em 0;
+        margin: 0 auto;
+        opacity: 0;
+        -webkit-animation-name: overlay;
+        animation-name: overlay;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-delay: 2s;
+        animation-delay: 2s;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+      }
+      a {
+        text-decoration: none;
+        color: #061006;
+      }
+      a:hover {
+        outline: none;
+      }
+
+    </style>
+  </head>
+  <body>
+    <section class="image-container" style="background-image: url(/images/kingC.jpg)">
+        <header>
+            <p class="top">Software Engineer</p>
+            <h1>Ian Morrison</h1>
+        </header>
+    </section>
+    <footer>
+        <a href="//github.com/imorrison">Github</a>
+        <a href="//www.linkedin.com/in/ian-morrison-73166855">LinkedIn</a>
+        <a href="//twitter.com/iansquare">Twitter</a>
+    </footer>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

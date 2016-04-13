@@ -1,0 +1,24 @@
+{
+  "name": "imorrison.github.com",
+  "version": "1.0.0",
+  "description": "My Site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imorrison/imorrison.github.com.git"
+  },
+  "author": "Ian Morrison",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imorrison/imorrison.github.com/issues"
+  },
+  "homepage": "https://github.com/imorrison/imorrison.github.com#readme",
+  "devDependencies": {
+    "gh-pages": "^0.11.0",
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4"
+  }
+}
