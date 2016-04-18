@@ -13,14 +13,14 @@
         padding 0;
         margin: 0;
         font-family:'Lato', sans-serif;
-        -webkit-text-stroke-width: 0.1px;
       }
       .image-container {
         background: #131313 50% 100% no-repeat;
         background-size: cover;
-        height: 90vh;
+        height: 70vh;
         width: 100%;
         display: flex;
+        margin-bottom: 1em;
         flex-direction: column;
         justify-content: center;
         opacity: 0;
@@ -73,11 +73,14 @@
         font-size: 3em;
         margin: 0.2em 0;
       }
-      footer {
+      footer, .mid-section {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         max-width: 600px;
-        padding: 1em 0;
+        min-width: 50%;
+        padding: 1em 2em;
+      }
+      footer, .mid-section, hr {
         margin: 0 auto;
         opacity: 0;
         -webkit-animation-name: overlay;
@@ -89,10 +92,24 @@
         -webkit-animation-fill-mode: forwards;
         animation-fill-mode: forwards;
       }
+      .mid-section p {
+          font-size: 2em;
+          line-height: 1.6;
+          margin-bottom: 2em;
+      }
+      a:hover {
+          border-bottom: 1px solid rgba(49, 47, 56, 0.42);
+      }
+      hr {
+         border-top: 1px solid rgba(49, 47, 56, 0.42);
+      }
+      footer {
+          margin-bottom: 1em;
+      }
       a {
         text-decoration: none;
         color: #061006;
-        font-size: 1.5em;
+        font-size: 1em;
       }
       a:hover {
         outline: none;
@@ -108,10 +125,17 @@
             <h1>Ian Morrison</h1>
         </header>
     </section>
+    <section class="mid-section">
+        <p>I am building single page applications at <a href="//symphony.com" target="_blank">Symphony Secure Communications</a>.
+        When I am not build software, I am mostly <a href="//vsco.co/diannamertz/journal/eighteen-days-in-the-sierra" target="_blank">backbacking across California with my wife</a>. I have
+        done many different projects - <a href="//www.pbs.org/wgbh/pages/frontline/tehranbureau/2010/02/an-iranian-civil-rights-movement.html" target="_blank">journalism</a>, 
+        <a href="//youtu.be/-vTy7Whh7Nw" target="_blank">art museums</a>. I am always looking for the next creative endeavor.</p>
+    </section>
+    <hr>
     <footer>
-        <a href="//github.com/imorrison">Github</a>
-        <a href="//www.linkedin.com/in/ian-morrison-73166855">LinkedIn</a>
-        <a href="//twitter.com/iansquare">Twitter</a>
+        <a href="//github.com/imorrison" target="_blank">Github</a>
+        <a href="//www.linkedin.com/in/ian-morrison-73166855" target="_blank">LinkedIn</a>
+        <a href="//twitter.com/iansquare" target="_blank">Twitter</a>
     </footer>
   </body>
 </html>
